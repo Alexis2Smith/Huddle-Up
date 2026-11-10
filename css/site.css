@@ -17,3 +17,37 @@
 @media(max-width:820px){.container{width:min(100% - 34px,var(--max))}.topbar .container{justify-content:center}.topbar .tagline{display:none}.nav{grid-template-columns:1fr auto;min-height:78px}.brand img{height:64px}.menu-toggle{display:block}.nav-links{position:absolute;left:0;right:0;top:78px;background:#fff;padding:22px;display:none;flex-direction:column;box-shadow:var(--shadow)}.nav-links.open{display:flex}.nav>.btn{display:none}.hero,.hero-inner{min-height:auto}.hero-inner{grid-template-columns:1fr;padding-top:48px}.hero-copy{padding-bottom:18px}.hero-person{justify-self:center;max-width:520px}.signature-card{bottom:28px;right:0}.service-grid{grid-template-columns:repeat(2,1fr)}.destinations,.trips{grid-template-columns:1fr 1fr}.group-block,.proof,.contact-wrap{grid-template-columns:1fr}.contact-card{position:static}.newsletter{grid-template-columns:1fr}.newsletter form{min-width:0}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.section{padding:72px 0}.hero h1{font-size:3.25rem}.signature-card{position:relative;right:auto;bottom:auto;margin:-12px auto 24px;width:88%}.destinations,.trips,.gallery-grid,.metrics,.form-grid{grid-template-columns:1fr}.gallery-grid a:first-child{grid-row:auto}.destination-card{min-height:300px}.check-grid{grid-template-columns:1fr}.newsletter form{flex-direction:column}.newsletter input{min-width:0}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.topbar-links{justify-content:center;font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+
+
+/* November 2026 premium visual refresh */
+:root{--navy:#07283b;--navy-2:#0b3b51;--teal:#23899b;--teal-2:#4ab4b9;--purple:#6843b7;--purple-2:#8159c3;--mist:#f5f8f8;--ink:#162e3d;--shadow:0 24px 70px rgba(6,42,70,.12)}
+body{font-feature-settings:"kern";-webkit-font-smoothing:antialiased}
+h1,h2,h3{letter-spacing:-.035em}
+.section{padding-block:clamp(70px,8vw,116px)}
+.site-header{box-shadow:0 6px 22px rgba(6,42,70,.045)}
+.nav-links a{position:relative}
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:var(--purple);transition:right .25s}
+.nav-links a:hover:after,.nav-links a:focus-visible:after{right:0}
+.hero{min-height:720px;background:#e8f5f3}
+.hero-bg{background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.93) 30%,rgba(255,255,255,.42) 57%,rgba(5,34,49,.10) 100%),url('https://raw.githubusercontent.com/ascendainow/Huddle-Up-N-Travel/main/images/Negril.png') center/cover no-repeat}
+.hero-inner{min-height:720px}
+.hero h1{font-size:clamp(3.5rem,6vw,6.5rem);line-height:.99}
+.hero h1 span{color:var(--purple)}
+.hero-copy p{line-height:1.75;color:#294658}
+.hero-person>img{filter:drop-shadow(0 22px 30px rgba(4,34,49,.17))}
+.signature-card{background:linear-gradient(145deg,#0b4d65,#07283b);border:1px solid rgba(255,255,255,.22)}
+.service-ribbon{border-bottom:1px solid #e4ecee}
+.service-chip b{background:#e4f3f3}
+.destination-card{min-height:290px}
+.destination-card span{font-size:.83rem}
+.trip-card{transition:transform .25s,box-shadow .25s}
+.trip-card:hover{transform:translateY(-6px);box-shadow:0 25px 65px rgba(6,42,70,.18)}
+.trip-price{font-size:1.15rem}
+.founder-section{background:linear-gradient(180deg,#fff,#f7fbfa)}
+.founder-intro{max-width:950px;text-align:center;margin-bottom:70px}
+.founder-intro h2{font-size:clamp(2.5rem,5vw,5.1rem)}
+.founder-intro h2 em{font-style:normal;color:var(--purple)}
+.founder-intro p{max-width:700px;margin:0 auto 25px;color:var(--muted);font-size:1.13rem}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+@media(max-width:800px){.hero,.hero-inner{min-height:auto}.hero-inner{padding-top:64px}.hero-copy{padding-bottom:25px}.hero-person{max-width:470px}.signature-card{right:0}.founder-intro{margin-bottom:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
